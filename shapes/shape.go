@@ -1,6 +1,18 @@
 package shapes
 
+type Rectangle struct {
+	Width  float64
+	Height float64
+}
+
+/*
 func Perimeter(width float64, height float64) float64 {
 
-	return 0
+	return 2 * (width  +  height)
+}
+*/
+
+func Perimeter(rectangle Rectangle) float64 {
+
+	return 2 * (rectangle.Width + rectangle.Height)
 }
